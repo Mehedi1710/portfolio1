@@ -2,9 +2,9 @@ import React from 'react';
 import Info from '../../components/Info';
 import Stats from '../../components/Stats';
 import { FaDownload } from 'react-icons/fa';
-import CV from '../../assets/mehedi.pdf';
 import './about.css';
 import Skills from '../../components/Skills';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -19,12 +19,12 @@ const About = () => {
             <ul className="info__list grid">
               <Info />
             </ul>
-            <a href={CV} download="" className="button">
+            <Link href="" className="button">
               Download CV
               <span className="button__icon">
                 <FaDownload />
               </span>
-            </a>
+            </Link>
           </div>
           <div className="stats grid">
             <Stats />

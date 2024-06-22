@@ -3,7 +3,7 @@
 }
 
 .contact__title {
-  font-size: var(--h3-font-size);
+  font-size: var(--h2-font-size);
   font-weight: var(--weight-600);
   margin-bottom: 1rem;
   color: var(--title-color);

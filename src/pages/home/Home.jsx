@@ -1,13 +1,13 @@
 import React from 'react';
 import './home.css';
-import Profile from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
+import pro from '../../assets/pro2.png'
 
 const Home = () => {
   return (
     <section className="home section grid">
-      <img src={Profile} alt="" className="home__img" />
+      <img src={pro} alt="" className="home__img" />
 
       <div className="home__content">
         <div className="home__data">
