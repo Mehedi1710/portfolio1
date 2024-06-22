@@ -17,9 +17,7 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [sub, setSub] = useState('');
   const [message, setMessage] = useState('');
-  const serviceid = 'service_hstgcy7';
-  const publicKey = '9q6j2YdxcAuKu4rNN';
-  const templateid = 'template_ckqfsn9';
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -37,6 +35,7 @@ const Contact = () => {
         }
       );
   };
+  
 
   return (
     <section className="contact section">
