@@ -2,12 +2,12 @@ import React from 'react';
 import './home.css';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
-import pro from '../../assets/pro2.png'
+import profile from '../../assets/profile.png'
 
 const Home = () => {
   return (
     <section className="home section grid">
-      <img src={pro} alt="" className="home__img" />
+      <img src={profile} alt="" className="home__img" />
 
       <div className="home__content">
         <div className="home__data">
