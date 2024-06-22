@@ -13,16 +13,19 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const form = useRef();
-  const[name, setName] = useState('');
-  const[email, setEmail] = useState('');
-  const[sub, setSub] = useState('');
-  const[message, setMessage] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [sub, setSub] = useState('');
+  const [message, setMessage] = useState('');
+  const serviceid = 'service_hstgcy7';
+  const publicKey = '9q6j2YdxcAuKu4rNN';
+  const templateid = 'template_ckqfsn9';
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_gwk7bzd', 'template_sk4f4fg', form.current, {
+      .sendForm('service_hstgcy7', 'template_ckqfsn9', form.current, {
         publicKey: '9q6j2YdxcAuKu4rNN',
       })
       .then(
@@ -31,9 +34,10 @@ const Contact = () => {
         },
         (error) => {
           console.log('FAILED...', error.text);
-        },
+        }
       );
   };
+
   return (
     <section className="contact section">
       <h2 className="section__title">
@@ -81,14 +85,19 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <form ref={form} onSubmit={sendEmail} action="" className="contact__form">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          action=""
+          className="contact__form"
+        >
           <div className="form__input-group">
             <div className="form__input-div">
               <input
                 type="text"
                 placeholder="Your Name"
                 className="form__control"
-                onChange={(e)=>setName(e.target.value)}
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className="form__input-div">
@@ -96,7 +105,7 @@ const Contact = () => {
                 type="email"
                 placeholder="Your Email"
                 className="form__control"
-                onChange={(e)=>setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="form__input-div last__div">
@@ -104,7 +113,7 @@ const Contact = () => {
                 type="text"
                 placeholder="Your Subject"
                 className="form__control"
-                onChange={(e)=>setSub(e.target.value)}
+                onChange={(e) => setSub(e.target.value)}
               />
             </div>
           </div>
@@ -112,7 +121,7 @@ const Contact = () => {
             <textarea
               placeholder="Your Message"
               className="form__control textarea"
-              onChange={(e)=>setMessage(e.target.value)}
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </div>
           <button className="button">
