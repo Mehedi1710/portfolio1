@@ -15,7 +15,7 @@ const Home = () => {
             <span>I'm Mehedi.</span> Web Developer
           </h1>
           <p className="home__description">
-            I`m a web designer $ frontend developer focus on crafting clean and
+            I`m a web designer & frontend developer focus on crafting clean and
             user-friendly experiences,I am passionate about building excellent
             that improves that lives of those around me.
           </p>
